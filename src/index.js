@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom'
-import Contador from './components/Contador'
+import Hook from './components/Hook'
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <>
-        <Contador numero={10}/>
+        <Hook/>
     </>
 , elemento)
