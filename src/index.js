@@ -1,11 +1,27 @@
 import ReactDOM from 'react-dom'
-import PrimeiroComponente from './components/PrimeiroComponente'
+import Familia from './components/Familia'
+import Membro from './components/Membro'
+import FamiliaCastello from './components/FamiliaCastello'
 
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
-    <PrimeiroComponente valor={10} abcd={2**8} isLegal={true}/>
+    <>
+        <Familia sobrenome='Pererira'>
+            <Membro nome='Andre' sobrenome='Pereira'/>
+            <Membro nome='Marina' sobrenome='Pereira'/>
+        </Familia>
+        <FamiliaCastello sobrenome='Castello'/>
+    </>
 , elemento)
+
+//ReactDOM.render(<FamiliaCastello/>, elemento)
+
+// ReactDOM.render(
+//     <div>
+//         <MultiElementos/>
+//     </div>
+// , elemento)
 
 // ReactDOM.render(
 //     <ul>
