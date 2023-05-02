@@ -1,17 +1,11 @@
 import ReactDOM from 'react-dom'
-import Familia from './components/Familia'
-import Membro from './components/Membro'
-import FamiliaCastello from './components/FamiliaCastello'
-
+import Pai from './components/Pai'
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <>
-        <Familia sobrenome='Pererira'>
-            <Membro nome='Andre' sobrenome='Pereira'/>
-            <Membro nome='Marina' sobrenome='Pereira'/>
-        </Familia>
-        <FamiliaCastello sobrenome='Castello'/>
+        <Pai/>
+        {/* <FamiliaCastello sobrenome='Castello'/> */}
     </>
 , elemento)
 
